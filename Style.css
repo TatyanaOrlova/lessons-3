@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+
+.bg-wallpaper {
+  background-color: black;
+  background-image: url(../lessons_3/pages/Image/фон.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  z-index: -1;
+  top: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  text-align: center;
+  background-color: rgb(99, 99, 99);
+  z-index: 1;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.content {
+  background-color: grey;
+  color: black;
+  margin-top: 180px;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+  min-height: 300px;
+  z-index: 0;
+}
+
+/* для полупрозрачного фона поверх фона */
+/* .bg-overlay {
+  background-color: white;
+  background-image: url(pages/Image/фон-главная.jpg);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  opacity: 0.5;
+} */
+
+.title {
+  font-size: 120px;
+  margin-top: 200px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100vw;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  color: white;
+}
+
+.navbar-list {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.navbar-link {
+  border: 2px solid black;
+  padding: 1em;
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.25);
+  transition: 1s;
+}
+
+.navbar-link.active {
+  background-color: white;
+  color: black;
+}
+
+/* страница СТАТЬИ */
+
+.articles-link {
+  text-decoration: none;
+  border-bottom: 2px solid blue;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(133, 163, 228);
+}
+
+.articles-read {
+  background-color: rgb(0, 146, 146);
+  font-size: 18px;
+}
+
+.articles-further:hover {
+  text-decoration: none;
+  color: rgb(90, 182, 162);
+}
+
+.articles-comment {
+  color: rgb(53, 56, 61);
+  font-size: 18px;
+}
+
+.articles-text {
+  text-align: justify;
+}
+
+.articles-text::first-letter {
+  font-family: monospace;
+  color: blue;
+  font-size: 30px;
+  float: left;
+  border: 1px solid black;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+/* страница КАТАЛОГ */
+
+.catalog {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-list {
+  list-style-type: none;
+  text-align: left;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 800;
+  background-color: aqua;
+  width: 300px;
+}
+
+.catalog-list::before {
+  content: "\2714";
+  margin-right: 4px;
+}
+
+.sublist {
+  padding: 10px;
+}
+
+.sublist-list {
+  list-style-type: none;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: aliceblue;
+  padding: 5px;
+}
+
+.sublist-list::before {
+  content: "\27A6";
+  margin-right: 4px;
+}
+
+.new::after {
+  content: "new";
+  background-color: blue;
+  color: white;
+  font-size: 110%;
+  padding: 2px;
+  margin-left: 4px;
+}
+
+/* страница КОНТАКТЫ */
+.map {
+  width: 600px;
+  height: 400px;
+}
+
+/* страница ГАЛЕРЕЯ */
+.textura {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+
+  background-color: red;
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url(../lessons_3/pages/Image/texture.jpg);
+  background-size: 500px;
+  background-repeat: repeat;
+  background-position: top;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3em;
+  margin: 10px;
+}
+
+.section-gallery {
+  text-align: center;
+  align-items: center;
+}
+
+.slide-gallery {
+  border: 2px solid black;
+  margin: 10px
+}
+
+.slide-gallery:hover {
+  border-color: transparent;
+}
+
+.caption-image {
+  color: black;
+  text-decoration: none;
+}
+
+/* страница НАВИГАЦИЯ*/
+.nav-paragraph {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 20px;
+}
+
+.pafagraph-link {
+  background-color: black;
+  color: aqua;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px;
+  display: block;
+}
+
+.start {
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+
+/*старницы РЕГИСТРАЦИЯ*/
+
+fieldset {
+  max-width: 500px;
+  margin: 25px auto;
+  background-color: rgb(0, 153, 255);
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+input[type="file"] {
+  padding: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 20px;
+  resize: vertical;
+  min-height: 75px;
+  max-height: 33vh;
+}
+
+legend {
+  transform: translateY(-10px);
+}
+
+.form-group:not(:first-of-type) {
+  margin: 15px 0 5px;
+}
+
+.form-group-sm {
+  margin: 10px 0 5px;
+}
+
+.form-group-sm:hover {
+  outline: 2px dotted black;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+}

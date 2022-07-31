@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../lessons_3/Style.css">
+</head>
+
+<body>
+
+  <div class="bg-wallpaper"></div>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="../index.html">Главная</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="articles.html">Статьи</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="gallery.html">Галерея</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="page-nav.html">Навигация</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link active" href="registration.html">Регистрация</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container content">
+    <h1>Регистрация</h1>
+    <form action="https://tests.fomenko.top/echo/index.php" method="get">
+      <fieldset>
+        <legend>Фамилия, имя</legend>
+
+        <div class="form-group">
+          <label for="fam">Фамилия</label>
+          <input class="capitalize" type="text" id="fam" name="fam" placeholder="Фамилия">
+        </div>
+
+        <div class="form-group">
+          <label for="nm">Имя</label>
+          <input class="capitalize" type="text" id="nm" name="nm" placeholder="Имя">
+        </div>
+
+        <div class="form-group">
+          <label for="photo">Добавьте фотографию</label>
+          <input type="file" id="photo" name="photo">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Адрес электронной почты</legend>
+        <div class="form-group">
+          <label for="email">электронная почта</label>
+          <input type="text" id="email" name="email" placeholder="Электронная почта">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Пароль</legend>
+        <div class="form-group">
+          <label for="pass">Пароль</label>
+          <input type="password" id="pass" name="pass" placeholder="введите пароль">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Адрес сайта</legend>
+        <div class="form-group">
+          <label for="sait">Сайт</label>
+          <input type="text" value="https://mysite.name" id="sait" name="site" placeholder="Адрес сайта">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Выбрать пол</legend>
+        <div class="form-group-sm">
+          <label for="sex">Ж</label>
+          <input type="radio" id="sex" name="male" value="female">
+        </div>
+
+        <div class="form-group-sm">
+          <label for="sex1">М</label>
+          <input type="radio" id="sex1" name="male" value="male">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Выбрать дату рождения</legend>
+        <div class="form-group">
+          <label for="birthday">Дата рождения</label>
+          <input type="date" id="birthday" name="birthday">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Выбрать предпочитаемую кухню</legend>
+
+        <div class="form-group-sm">
+          <div>
+            <label for="uk">Украинская</label>
+            <input type="checkbox" id="uk" name="Ukrain" value="Ukrain">
+          </div>
+        </div>
+
+        <div class="form-group-sm">
+          <div>
+            <label for="ch">Китайская</label>
+            <input type="checkbox" id="ch" name="Chaine" value="Chaine">
+          </div>
+        </div>
+
+        <div class="form-group-sm">
+          <div>
+            <label for="am">Американская</label>
+            <input type="checkbox" id="am" name="Americ" value="Americ">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Расскажите о себе</legend>
+        <div class="form-group">
+          <textarea id="osebe" name="osebe" cols="30" rows="10" placeholder="О себе"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Форма</legend>
+        <div class="form-group">
+          <input class="btn" type="submit" value="Зарегистрироваться" id="zareg" name="zareg">
+        </div>
+
+        <div class="form-group">
+          <input class="btn" type="reset" value="Очистить" id="clin" name="clin">
+        </div>
+      </fieldset>
+
+    </form>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      &copy; Орлова Татьяна
+    </div>
+  </footer>
+
+</body>
+
+</html>
